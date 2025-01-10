@@ -45,15 +45,15 @@ const timer = {
     seconds: document.querySelector('[data-seconds]'),
   },
   start() {
+    timerInput.disabled = true;
+    btnTimerInput.disabled = true;
     this.intevalId = setInterval(() => {
       const ms = userSelectedDate - Date.now();
       if (ms <= 0) {
         this.stop();
         return;
       }
-      if (this.intevalId !== 0) {
-        timerInput.disabled = true;
-      }
+
       const timeComponent = this.convertMs(ms);
       this.elements.days.textContent = this.addLeadingZero(timeComponent.days);
       this.elements.hours.textContent = this.addLeadingZero(
@@ -69,6 +69,13 @@ const timer = {
   },
   stop() {
     clearInterval(this.intevalId);
+    timerInput.disabled = false;
+    iziToast.info({
+      title: 'Готово',
+      message: 'Вы можете установить новую дату!',
+      position: 'topRight',
+      closeOnClick: true,
+    });
   },
   convertMs(ms) {
     const second = 1000;
