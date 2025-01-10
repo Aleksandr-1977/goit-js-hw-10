@@ -3,12 +3,13 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="logo" type="image" href="/goit-js-hw-10/assets/form-icon-CVokiTBJ.png" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>2-snackbar</title>
-  <link rel="logo" type="image" href="/goit-js-hw-10/assets/form-icon-CVokiTBJ.png" />
   <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-B7znVSbU.css">
+  <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-Dov3POoy.js"></script>
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/2-snackbar-CCyJQ-48.css">
 </head>
 
 <body>
@@ -20,24 +21,23 @@
       <a class="back-link" href="./index.html">Go back</a>
     </div>
     <form class="form">
-      <label>
+      <label class="label-form">
         Delay (ms)
-        <input type="number" name="delay" required />
+        <input class="input-form" type="number" name="delay" required />
       </label>
-
-      <fieldset>
+      <fieldset class="fieldset-form">
         <legend>State</legend>
-        <label>
+        <label class="checkbox-form">
           <input type="radio" name="state" value="fulfilled" required />
           Fulfilled
         </label>
-        <label>
+        <label class="checkbox-form">
           <input type="radio" name="state" value="rejected" required />
           Rejected
         </label>
       </fieldset>
 
-      <button type="submit">Create notification</button>
+      <button class="btn" type="submit">Create notification</button>
     </form>
   </main>
 
