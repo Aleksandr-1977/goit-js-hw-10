@@ -51,9 +51,7 @@ const timer = {
         this.stop();
         return;
       }
-      if (this.intevalId === 0) {
-        timerInput.disabled = false;
-      } else {
+      if (this.intevalId !== 0) {
         timerInput.disabled = true;
       }
       const timeComponent = this.convertMs(ms);
