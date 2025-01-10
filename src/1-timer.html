@@ -6,19 +6,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>1-timer</title>
+  <link rel="icon" type="image/svg+xml" href="./img/timer-logo.png" />
   <link rel="stylesheet" href="./css/styles.css" />
   <script type="module" src="./js/1-timer.js" defer></script>
 </head>
 
 <body>
-
-
   <main>
     <div class="container">
       <h1 class="main-title">
         <span class="main-title-gradient">Welcome</span> to Timer page
       </h1>
       <a class="back-link" href="./index.html">Go back</a>
+    </div>
+    <div class="input-data">
+      <input class="input-field" type="text" id="datetime-picker" placeholder="Select Date.."
+        autofocus />
+      <button class="btn" type="button" data-start>Start</button>
+    </div>
+    <div class="timer">
+      <div class="field">
+        <span class="value" data-days>00</span>
+        <span class="label">Days</span>
+      </div>
+      <div class="field">
+        <span class="value" data-hours>00</span>
+        <span class="label">Hours</span>
+      </div>
+      <div class="field">
+        <span class="value" data-minutes>00</span>
+        <span class="label">Minutes</span>
+      </div>
+      <div class="field">
+        <span class="value" data-seconds>00</span>
+        <span class="label">Seconds</span>
+      </div>
     </div>
   </main>
 
