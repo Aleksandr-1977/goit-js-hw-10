@@ -3,12 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="logo" type="image" href="/goit-js-hw-10/assets/form-icon-CVokiTBJ.png" />
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>2-snackbar</title>
-  <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js"></script>
-  <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-Dov3POoy.js"></script>
+  <link rel="logo" type="image" href="/goit-js-hw-10/assets/form-icon-CVokiTBJ.png" />
+  <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-Dov3POoy.js">
   <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/2-snackbar-CCyJQ-48.css">
 </head>
 
@@ -28,11 +30,13 @@
       <fieldset class="fieldset-form">
         <legend>State</legend>
         <label class="checkbox-form">
-          <input type="radio" name="state" value="fulfilled" required />
+          <input class="checkbox-form-fulfilled" type="radio" name="state" value="fulfilled"
+            required />
           Fulfilled
         </label>
         <label class="checkbox-form">
-          <input type="radio" name="state" value="rejected" required />
+          <input class="checkbox-form-rejected" type="radio" name="state" value="rejected"
+            required />
           Rejected
         </label>
       </fieldset>
