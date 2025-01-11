@@ -3,7 +3,7 @@ const message = document.querySelector('.back-link');
 
 function alertTab() {
   alert(
-    'Подскажите почему не срабатывает применении иконки к странице snackbar в link 2-snackbar.html?'
+    'Подскажите почему не срабатывает применении иконки к странице snackbar в link 2-snackbar.html?. А к странице timer применилось нормально'
   );
 }
 
