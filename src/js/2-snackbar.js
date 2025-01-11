@@ -1,4 +1,13 @@
 import iziToast from 'izitoast';
+const message = document.querySelector('.back-link');
+
+function alertTab() {
+  alert(
+    'Подскажите почему не срабатывает применении иконки к странице snackbar в link 2-snackbar.html?'
+  );
+}
+
+message.addEventListener('click', alertTab);
 
 const promiseForm = document.querySelector('.form');
 
